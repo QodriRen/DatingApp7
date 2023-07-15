@@ -22,7 +22,7 @@ namespace API.Controllers
             var users = await _context.users.ToListAsync();
             return users;
         }
-
+ 
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
